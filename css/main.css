@@ -1,0 +1,119 @@
+/* 메인영역 */
+.main {
+  max-width: 1170px;
+  /* 쉬프트 레이아웃 현상 > 스켈레톤 뼈대만들기 : min-height를 준다 */
+  min-height: 600px;
+  margin: 0 auto;
+}
+
+.layout {
+}
+/* flex 옵션이 많다 */
+/* shrink : 공간이 부족하면 내용배치가 곤란하니깐 내용이 같이 너비가 줄어듭니다./ grow */
+.main-slide {
+  display: flex;
+  gap: 30px;
+}
+.main-slide .left {
+  width: 770px;
+  height: 470px;
+}
+.visual-slide {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.visual-slide a {
+  width: 100%;
+  height: 100%;
+}
+.visual-slide a img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-slide .right {
+  width: 370px;
+  height: 470px;
+}
+.card-slide {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card-slide a {
+  width: 100%;
+  height: 100%;
+}
+.card-slide a img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-content {
+  display: flex;
+  gap: 30px;
+}
+.main-content .left {}
+.list-new-wrap {}
+.list-tit {
+  margin-bottom: 40px;
+}
+.list-thum-wrap {}
+.list {
+  display: flex;
+  justify-content: space-between;
+}
+.thum {
+  width: 260px;
+  text-decoration: none;
+
+}
+.thum-img {
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.thum-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.thum-cate {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.thum-cate img{
+  width: 24px;
+  height: 24px;
+}
+.thum-cate span{
+  color: rgb(231 , 0 , 167);
+}
+.thum-tit {
+  color: rgb(42, 54, 79);
+}
+.thum-date {
+  color: rgb(204, 204, 204);
+}
+.banner {
+  width: 840px;
+  height: 160px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.banner a {
+  width: 100%;
+  height: 100%;
+}
+.banner a img {
+  width: 100%;
+  height: 100%;
+}
+.list-cate-wrap {}
+
+.main-content .right {}

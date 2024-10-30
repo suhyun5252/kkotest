@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!-- 웹브라우저가 위의 줄을 읽어들이면서 마음의 준비를 한다. -->
+<!-- !DOCTYPE html을 읽어들이면 최신 HTML5 버전의 문서구나 인식 -->
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>내가 만드는 사이트</title>
+    <!-- head 태그는 문서를 위한 여러가지 정보를 제공하는 공간 특히 SEO가 대단히 중요 -->
+    <!-- 서비스를 아무리 잘 만들어도 검색이 안됨. 사용자가 공유하지 못하면 서비스는 사라진다.-->
+
+    <link rel="stylesheet" href="./css/test.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+
+  <body>
+    <!-- 1. 레이아웃 잡기 (주석사용 또는 div 사용) -->
+    <!-- 2. div는 레이아웃 외 용도 X -->
+    <!-- 3. 영역을 잡는것은 올바르다. div 사용하면 된다. 그러나 웹브라우저는 어떤 이유로 배치되었는지는 모름 -->
+    <!-- 4. 목적 : 내용의 영역을 구분하는것 : <div> 사용 : 웹브라우저 검색가능하도록 지원하고 싶다 : 시멘트태그 -->
+
+    <!-- 상단 -->
+    <header class="header">
+      <div class="layout">
+        <!-- 로고 -->
+        <div id="logo" class="header-logo">
+          <a href="#" class="header-logo-link">
+            <img src="./images/etc/logo-kakao.png" alt="카카오브레인" />
+          </a>
+          <a href="#" class="header-logo-motion">
+            <img src="./images/etc/logo-blog01.png" alt="블로그 이미지" />
+          </a>
+        </div>
+        <!-- 메뉴 및 검색창 -->
+        <div class="nav">
+          <a href="#">소식</a>
+          <a href="#">팀 & 크루</a>
+          <a href="#">영입</a>
+          <button id="search" type="button">
+            <img src="images/icon/icon-search.png" alt="검색" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- 메인 -->
+    <main class="main">
+      <div class="layout">
+        <!-- 슬라이드 -->
+        <div class="main-slide">
+          <!-- 왼쪽 -->
+          <div class="left">
+            <!-- 교체 가능 -->
+            <div class="visual-slide">
+              <a href="#">
+                <img src="./images/b1.png" alt="배너이미지" />
+              </a>
+            </div>
+          </div>
+          <!-- 오른쪽 -->
+          <div class="right">
+            <div class="card-slide">
+              <a href="#">
+                <img src="./images/c3.png" alt="카드이미지" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 내용 -->
+        <div class="main-content">
+          <!-- 왼쪽 -->
+          <div class="left">
+            <!-- 최신글 목록 -->
+            <div class="list-new-wrap">
+              <h4 class="list-tit">NEW. 따끈따끈 새로 나온 글 🔥</h4>
+              <div class="list-thum-wrap">
+                <!-- @Start 게시글 목록 -->
+                <div class="list">
+                  <a href="#" class="thum">
+                    <div class="thum-img">
+                      <img src="./images/c1.jpg" alt="뉴스이미지" />
+                    </div>
+                    <div class="thum-cate">
+                      <img src="./images/icon/ic_llms.png" alt="LLMs"/>
+                      <span>LLMs</span>
+                    </div>
+                    <h5 class="thum-tit">Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention 공개</h5>
+                    <span class="thum-date">24.10.29</span>
+                  </a>
+                  <a href="#" class="thum">
+                    <div class="thum-img">
+                      <img src="./images/c1.jpg" alt="뉴스이미지" />
+                    </div>
+                    <div class="thum-cate">
+                      <img src="./images/icon/ic_llms.png" alt="LLMs"/>
+                      <span>LLMs</span>
+                    </div>
+                    <h5 class="thum-tit">Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention 공개</h5>
+                    <span class="thum-date">24.10.29</span>
+                  </a>
+                  <a href="#" class="thum">
+                    <div class="thum-img">
+                      <img src="./images/c1.jpg" alt="뉴스이미지" />
+                    </div>
+                    <div class="thum-cate">
+                      <img src="./images/icon/ic_llms.png" alt="LLMs"/>
+                      <span>LLMs</span>
+                    </div>
+                    <h5 class="thum-tit">Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention 공개</h5>
+                    <span class="thum-date">24.10.29</span>
+                  </a>
+                </div>
+                <!-- @End 게시글 목록 -->
+              </div>
+            </div>
+            <!-- 배너 -->
+            <div class="banner">
+              <a href="#">
+                <img src="./images/1pc.png" alt="배너이미지" />
+              </a>
+            </div>
+            <!-- 카테고리 목록 -->
+            <div class="list-cate-wrap">
+              <h4 class="list-tit">NEW. 따끈따끈 새로 나온 글 🔥</h4>
+              <div class="list-thum-wrap">
+                <!-- @Start 게시글 목록 -->
+                <div class="list">
+                  <a href="#" class="thum">
+                    <div class="thum-img">
+                      <img src="./images/c1.jpg" alt="뉴스이미지" />
+                    </div>
+                    <div class="thum-cate">
+                      <img src="./images/icon/ic_llms.png" alt="LLMs"/>
+                      <span>LLMs</span>
+                    </div>
+                    <h5 class="thum-tit">Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention 공개</h5>
+                    <span class="thum-date">24.10.29</span>
+                  </a>
+                  <a href="#" class="thum">
+                    <div class="thum-img">
+                      <img src="./images/c1.jpg" alt="뉴스이미지" />
+                    </div>
+                    <div class="thum-cate">
+                      <img src="./images/icon/ic_llms.png" alt="LLMs"/>
+                      <span>LLMs</span>
+                    </div>
+                    <h5 class="thum-tit">Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention 공개</h5>
+                    <span class="thum-date">24.10.29</span>
+                  </a>
+                  <a href="#" class="thum">
+                    <div class="thum-img">
+                      <img src="./images/c1.jpg" alt="뉴스이미지" />
+                    </div>
+                    <div class="thum-cate">
+                      <img src="./images/icon/ic_llms.png" alt="LLMs"/>
+                      <span>LLMs</span>
+                    </div>
+                    <h5 class="thum-tit">Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention 공개</h5>
+                    <span class="thum-date">24.10.29</span>
+                  </a>
+                </div>
+                <!-- @End 게시글 목록 -->
+              </div>
+            </div>
+          </div>
+          <!-- 오른쪽 -->
+          <div class="right">
+            <!-- 카드 전체 목록 -->
+            <div class="list-card"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 하단 -->
+    <footer class="footer">
+      <!-- 푸터 메인 -->
+      <div class="footer-main">
+        <div class="layout">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+      </div>
+      <!-- 푸터 카피 -->
+      <div class="footer-copy">
+        <div class="layout">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
